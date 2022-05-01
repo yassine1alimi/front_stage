@@ -99,7 +99,7 @@
       </ul>
      --> 
      <ul class="navbar-nav"   >
-      <li  class=" nav-item" *ngIf="isLoggedIn === true && currentUser.role ==='ROLE_ADMIN' " >
+      <li *ngIf="showAdminBoard" class=" nav-item"  > <!--  *ngIf="isLoggedIn === true && currentUser.role ==='ROLE_ADMIN' " -->
         <a routerLink="/dashboard"  class="nav-link">
             <i class="ni ni-tv-2 text-primary"></i>
             Dashboard
@@ -107,47 +107,46 @@
     </li>
     <li  class=" nav-item">
       <a routerLinkActive="active"  class="nav-link">
-          <i class="ni ni-tv-2 text-primary"></i>
+          <i class="fas fa-users text-primary"></i>
           Gestion utilisateur
       </a>
   </li>
-      <li  class=" nav-item">
+      <!--li  class=" nav-item">
           <a routerLink="/tables"  class="nav-link">
               <i class="ni ni-tv-2 text-primary"></i>
               Table
           </a>
-      </li>
+      </li-->
       <li  class=" nav-item">
-        <a routerLinkActive="active"  class="nav-link">
-            <i class="ni ni-tv-2 text-primary"></i>
-            Reclamation
+        <a routerLink="/reclamations"  class="nav-link">
+            <i class="ni ni-bullet-list-67 text-primary"></i>
+            Réclamations
         </a>
     </li>
     <li  class=" nav-item">
       <a routerLinkActive="active"  class="nav-link">
-          <i class="ni ni-tv-2 text-primary"></i>
+          <i class="ni ni-ruler-pencil text-primary"></i>
           Tickets
       </a>
   </li>
   <li  class=" nav-item">
     <a routerLinkActive="active"  class="nav-link">
-        <i class="ni ni-tv-2 text-primary"></i>
+        <i class="ni ni-chat-round text-primary"></i>
         Contacts
     </a>
 </li>
 <li  class=" nav-item">
   <a routerLinkActive="active"  class="nav-link">
-      <i class="ni ni-tv-2 text-primary"></i>
+      <i class="ni ni-collection text-primary"></i>
       Forum
   </a>
 </li>
   </ul>
       <!-- Divider -->
-      <hr class="my-3">
-      <!-- Heading -->
-      <h6 class="navbar-heading text-muted">Documentation</h6>
+      
+      <!--h6 class="navbar-heading text-muted">Documentation</h6-->
       <!-- Navigation -->
-      <ul class="navbar-nav mb-md-3">
+      <!--ul class="navbar-nav mb-md-3">
         <li class="nav-item">
           <a class="nav-link" href="https://demos.creative-tim.com/argon-dashboard-angular/documentation/tutorial">
             <i class="ni ni-spaceship"></i> Getting started
@@ -163,7 +162,7 @@
             <i class="ni ni-ui-04"></i> Components
           </a>
         </li>
-      </ul>
+      </ul-->
     </div>
   </div>
 </nav>

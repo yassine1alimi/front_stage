@@ -6,12 +6,13 @@ import { TokenStorageService } from './services/token-storage.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-
+/*
 export class AppComponent {
   title = 'sofrecom';
 }
+*/
 
-/*export class AppComponent {
+export class AppComponent {
   private roles: string[];
   isLoggedIn = false;
   showAdminBoard = false;
@@ -39,4 +40,3 @@ export class AppComponent {
     window.location.reload();
   }
 }
-*/

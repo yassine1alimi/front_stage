@@ -8,7 +8,24 @@ import { UserService } from '../services/user.service';
 })
 export class BoardAdminComponent implements OnInit {
 
-  content: string;
+  //content: string;
+
+  //constructor(private userService: UserService) { }
+
+ // ngOnInit(): void {
+   /* this.userService.getAdminBoard().subscribe(
+      data => {
+        this.content = data;
+      },
+      err => {
+        this.content = JSON.parse(err.error).message;
+      }
+    );
+    */
+  //}
+
+//}
+content: string;
 
   constructor(private userService: UserService) { }
 
@@ -24,3 +41,4 @@ export class BoardAdminComponent implements OnInit {
   }
 
 }
+

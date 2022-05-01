@@ -12,9 +12,12 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app.routing';
 import { ComponentsModule } from './components/components.module';
-import { ReclamationComponent } from './reclamation/reclamation.component';
+import { ReclamationComponent } from './pages/reclamation/reclamation.component';
 import { BoardAdminComponent } from './board-admin/board-admin.component';
 import { BoardUserComponent } from './board-user/board-user.component';
+import { UpdateUserProfileComponent } from './update-user-profile/update-user-profile.component';
+import { BoardModerateurComponent } from './board-moderateur/board-moderateur.component';
+import { AddReclamationComponent } from './pages/add-reclamation/add-reclamation.component';
 //import { authInterceptorProviders } from './helpers/auth.interceptor';
 
 
@@ -34,7 +37,10 @@ import { BoardUserComponent } from './board-user/board-user.component';
     AuthLayoutComponent,
     ReclamationComponent,
     BoardAdminComponent,
-    BoardUserComponent
+    BoardUserComponent,
+    UpdateUserProfileComponent,
+    BoardModerateurComponent,
+    AddReclamationComponent
   ],
   providers: [],
   

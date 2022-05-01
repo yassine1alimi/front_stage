@@ -6,11 +6,24 @@ import { Routes, RouterModule } from '@angular/router';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 import { AuthLayoutComponent } from './layouts/auth-layout/auth-layout.component';
 import { LoginComponent } from './pages/login/login.component';
+import { UpdateUserProfileComponent } from './update-user-profile/update-user-profile.component';
+import { BoardUserComponent } from './board-user/board-user.component';
+import { BoardModerateurComponent } from './board-moderateur/board-moderateur.component';
+import { BoardAdminComponent } from './board-admin/board-admin.component';
+import { ReclamationComponent } from './pages/reclamation/reclamation.component';
+
 
 const routes: Routes =[
+  { path: 'user', component: BoardUserComponent },
+  { path: 'mod', component: BoardModerateurComponent },
+  { path: 'admin', component: BoardAdminComponent },
+  { path: 'reclamations', component: ReclamationComponent },
+
+  
+    {path: 'updateuser', component : UpdateUserProfileComponent},
   {
     path: '',
-    redirectTo: 'dashboard',
+    redirectTo: 'login',
     pathMatch: 'full',
   }, {
     path: '',
@@ -31,13 +44,14 @@ const routes: Routes =[
       }
     ]
   }, 
-  { path: 'login', component: LoginComponent },
+  //{ path: 'login', component: LoginComponent },
+  { path: '', redirectTo : 'login', pathMatch:'full' }
 
   
-  {
-    path: '**',
-    redirectTo: 'dashboard'
-  }
+  //{
+   // path: '**',
+   // redirectTo: 'dashboard'
+  //}
 ];
 
 @NgModule({
